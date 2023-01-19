@@ -1,0 +1,32 @@
+#preview h1,
+#preview h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+#preview h1 {
+  font-size: 2.5rem;
+}
+
+#preview h2 {
+  font-size: 2rem;
+}
+
+#preview p {
+  margin-bottom: 0.5rem;
+}
+
+#preview a {
+  text-decoration-line: underline;
+  color: #134e4a;
+}
+
+#preview pre {
+  overflow-x: auto;
+  background: #f1f5f9;
+  border: 5px solid #fff;
+  border-radius: 15px;
+  padding: 5px;
+}
