@@ -1,32 +1,80 @@
 #preview h1,
 #preview h2 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
+  @apply mt-0 mb-1 font-medium;
 }
 
 #preview h1 {
-  font-size: 2.5rem;
+  @apply text-4xl;
 }
 
 #preview h2 {
-  font-size: 2rem;
+  @apply text-3xl;
 }
 
 #preview p {
-  margin-bottom: 0.5rem;
+  @apply mb-1.5;
 }
 
 #preview a {
-  text-decoration-line: underline;
-  color: #134e4a;
+  @apply underline text-green-800;
+}
+
+#preview code {
+  @apply bg-gray-400 text-black rounded p-1;
 }
 
 #preview pre {
-  overflow-x: auto;
-  background: #f1f5f9;
-  border: 5px solid #fff;
-  border-radius: 15px;
-  padding: 5px;
+  @apply bg-gray-200 border-solid border-2 border-gray-200 rounded p-1.5 my-2.5 overflow-x-auto;
+}
+
+#preview pre code {
+  @apply bg-inherit text-inherit font-mono p-0;
+}
+
+#preview ul {
+  @apply list-disc;
+}
+
+#preview ol {
+  @apply list-decimal;
+}
+
+#preview blockquote {
+  @apply bg-sky-900 p-1 m-1.5 rounded border-l-4;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+#preview blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+  @apply text-gray-400 text-6xl mr-1 align-[-0.4em]
+}
+
+#preview blockquote p {
+  @apply inline;
+}
+
+/* Dark theme */
+.dark {
+  @apply bg-gray-700 text-zinc-50;
+}
+
+.dark #editor {
+  @apply bg-gray-800 text-zinc-200;
+}
+
+.dark #preview {
+  @apply bg-gray-800 text-zinc-200;
+}
+
+.dark #preview a {
+  @apply underline text-green-300 hover:text-green-200;
+}
+
+.dark #preview pre {
+  @apply bg-slate-800 text-stone-300;
 }

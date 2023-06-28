@@ -5,8 +5,8 @@
     "[Freecodecamp](https://www.freecodecamp.org)",
     "`<div class=\"wrapper\"></div>`",
     "``` \nexport default function Editor({ markImput, setMarkInput }) {\nconst manejarCambio = (e) => {\n   setMarkInput(e.target.value);\n};\nreturn (\n<div className=\"editor-wrapper max-h-[80%] min-w-[80%] mx-auto\">\n<div className=\"header p-2 text-slate-50 text-center bg-emerald-800 border border-b-0 border-slate-500 rounded-t\">\nEditor <i class=\"fas fa-edit\"></i>\n</div>\n<textarea\nclassName=\"w-full min-h-full p-4 bg-emerald-50 border border-t-0 border-slate-300 rounded-b\"\ntype=\"text\"\nid=\"editor\"\nonChange={manejarCambio}>\n{markImput}\n</textarea>\n   </div>\n);\n}\n```",
-    "- And of course there are lists.\n - Some are bulleted. \n   - With different indentation levels. \n     - That look like this.",
-    "1. And there are numbered lists too.\n  1. Use just 1s if you want!",
+    "- And of course there are lists.\n       - Some are bulleted. \n       - With different indentation levels. \n       - That look like this.",
+    "1. And there are numbered lists too.\n       1. Use just 1s if you want!",
     "> It`s works!",
     "Text **bold**",
     "![freecodecamp](https://camo.githubusercontent.com/d069971a0af4d9e393066dc77ced000cff23a1f6bbfbb9e7704a870192a926ca/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f66726565636f646563616d702f776964652d736f6369616c2d62616e6e65722e706e67)"
