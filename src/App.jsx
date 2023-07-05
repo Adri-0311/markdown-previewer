@@ -1,17 +1,13 @@
-import { useState } from 'react';
 import './App.css';
 import Editor from './components/Editor.jsx';
 import Previewer from './components/Previewer.jsx';
-import TextBase from './assets/text.json';
 
 function App() {
-  const [markInput, setMarkInput] = useState(TextBase.markdown.join('\n\n'));
-
   return (
     <div className='App h-screen my-4'>
       <div className='max-h-full grid grid-cols-12 auto-rows-[minmax(50%,_1fr)] grid-flow-row gap-4'>
-        <Editor markImput={markInput} setMarkInput={setMarkInput} />
-        <Previewer markImput={markInput} />
+        <Editor />
+        <Previewer />
       </div>
       <p className='text-center mb-2 mt-5 lg:mt-0'>
         Original app:&nbsp;
